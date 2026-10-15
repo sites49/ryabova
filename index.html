@@ -210,9 +210,9 @@ footer a { color: inherit }
     <a class="logo" href="#top"><b>Ирина Рябова</b><small>центр эстетики лица</small></a>
     <nav aria-label="Разделы"><a href="#services">Услуги и цены</a><a href="#how">Запись</a><a href="#contacts">Контакты</a></nav>
     <div class="icons">
-      <a class="wa" href="https://wa.me/79148679988" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
-      <a class="tg" href="https://t.me/kosmetolog_magadan_irinaryabova" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico"><use href="#i-tg"/></svg></a>
-      <a class="vk" href="https://vk.com/kosmetolog_irinaryabova" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg class="ico"><use href="#i-vk"/></svg></a>
+      <a class="wa" href="https://wa.me/79148673477" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+      <a class="tg" href="https://t.me/kosmetologmagadan" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico"><use href="#i-tg"/></svg></a>
+      <a class="vk" href="https://vk.com/kosmetolog_magadan" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg class="ico"><use href="#i-vk"/></svg></a>
     </div>
     <button class="pill-out" type="button" data-book="Консультация">Записаться</button>
   </div>
@@ -277,9 +277,9 @@ footer a { color: inherit }
         <a href="tel:+79148679988">+7 914 867-99-88</a>
         <a href="tel:+79776873040">+7 977 687-30-40</a>
         <div class="soc">
-          <a class="wa" href="https://wa.me/79148679988" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
-          <a class="tg" href="https://t.me/kosmetolog_magadan_irinaryabova" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico"><use href="#i-tg"/></svg></a>
-          <a class="vk" href="https://vk.com/kosmetolog_irinaryabova" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg class="ico"><use href="#i-vk"/></svg></a>
+          <a class="wa" href="https://wa.me/79148673477" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+          <a class="tg" href="https://t.me/kosmetologmagadan" target="_blank" rel="noopener" aria-label="Telegram"><svg class="ico"><use href="#i-tg"/></svg></a>
+          <a class="vk" href="https://vk.com/kosmetolog_magadan" target="_blank" rel="noopener" aria-label="ВКонтакте"><svg class="ico"><use href="#i-vk"/></svg></a>
         </div>
       </div>
       <div class="fcol">
@@ -302,7 +302,7 @@ footer a { color: inherit }
 
 <div class="mbar">
   <button class="pill" type="button" data-book="Консультация">Записаться</button>
-  <a class="sq" style="background:var(--wa)" href="https://wa.me/79148679988" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
+  <a class="sq" style="background:var(--wa)" href="https://wa.me/79148673477" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ico"><use href="#i-wa"/></svg></a>
   <a class="sq" style="background:var(--ink)" href="tel:+79148679988" aria-label="Позвонить"><svg class="ico"><use href="#i-tel"/></svg></a>
 </div>
 
@@ -336,7 +336,7 @@ const SERVICES = [
   { img: null, name: "Лазерная эпиляция Diolaze", text: "Гибридная насадка: неодимовый и александритовый лазер.", price: null },
   { img: null, name: "Инъекционная косметология", text: "Коррекция губ, коррекция носослёзной борозды, ботулинотерапия.", price: null },
 ];
-const WA = "79148679988";
+const WA = "79148673477";
 const rub = n => n.toLocaleString("ru-RU") + " ₽";
 // у строк без своего фото - плашка с первой буквой, чтобы не повторять уже показанные снимки
 document.getElementById("list").innerHTML = SERVICES.map(s => `
@@ -369,7 +369,7 @@ document.addEventListener("click", e => {
 });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeBook() });
 // Telegram и ВК не подставляют текст по ссылке: копируем его и открываем чат
-for (const [id, url] of [["o-tg", "https://t.me/kosmetolog_magadan_irinaryabova"], ["o-vk", "https://vk.com/kosmetolog_irinaryabova"]]) {
+for (const [id, url] of [["o-tg", "https://t.me/kosmetologmagadan"], ["o-vk", "https://vk.com/kosmetolog_magadan"]]) {
   document.getElementById(id).addEventListener("click", async () => {
     toast(await copyText() ? "Текст скопирован, вставьте его в чат" : "Напишите, на какую процедуру хотите записаться");
     window.open(url, "_blank", "noopener");
