@@ -375,5 +375,14 @@ for (const [id, url] of [["o-tg", "https://t.me/kosmetolog_magadan_irinaryabova"
   });
 }
 </script>
+<script>
+(function(){try{
+  var s='ryabova';
+  if(location.search.indexOf('me')>-1)localStorage.setItem('own','1');
+  if(localStorage.getItem('own'))return;
+  var d=new Date(Date.now()+11*36e5).toISOString().slice(0,10);
+  ['all',d].forEach(function(k){fetch('https://abacus.jasoncameron.dev/hit/sites49/'+s+'-'+k,{mode:'cors'}).catch(function(){})});
+}catch(e){}})();
+</script>
 </body>
 </html>
