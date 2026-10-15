@@ -154,6 +154,7 @@ footer a { color: inherit }
 .sheet { position: fixed; left: 50%; bottom: 0; z-index: 51; width: min(440px, 100%); transform: translate(-50%, 104%); background: #fff; border-radius: 28px 28px 0 0; padding: 22px 22px calc(22px + env(safe-area-inset-bottom, 0px)); transition: transform .35s cubic-bezier(.2,.8,.2,1) }
 @media (min-width: 700px) { .sheet { bottom: 50%; border-radius: 28px; transform: translate(-50%, 60%) scale(.96); opacity: 0; transition: transform .3s cubic-bezier(.2,.8,.2,1), opacity .25s } }
 .open .sheet-bg { opacity: 1; pointer-events: auto }
+.sheet { pointer-events: none } .open .sheet { pointer-events: auto } /* скрытое окно не должно ловить мышь */
 .open .sheet { transform: translate(-50%, 0) }
 @media (min-width: 700px) { .open .sheet { transform: translate(-50%, 50%) scale(1); opacity: 1 } }
 .sheet-top { display: flex; gap: 12px; align-items: start; margin-bottom: 18px }
